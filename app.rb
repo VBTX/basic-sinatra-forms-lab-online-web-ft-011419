@@ -16,6 +16,7 @@ post '/team' do
   @small_forward = params[:sf]
   @shooting_guard = params[:sg]
   @center = params[:c]
+  binding.pry
   erb :team
 end
 
