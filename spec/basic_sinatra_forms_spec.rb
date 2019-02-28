@@ -8,6 +8,7 @@ describe App do
 
     it 'renders basketball team form' do
       visit '/newteam'
+      binding.pry
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
       expect(page).to have_field(:coach)
